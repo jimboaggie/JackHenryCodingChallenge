@@ -1,0 +1,73 @@
+﻿@page "/"
+
+@using TwitterStats.Services
+
+@inject TwitterStats.Services.TwitterStreamService twitterStreamService
+
+
+<h1>Twitter Analytics Example</h1>
+
+<div class="row row-container-elements">
+    <div class="col-4">
+        <div class="form-group">
+            <label for="samplesize">Sample Size</label>
+            <input id="samplesize" @bind-value="@SampleSize" class="form-control">
+        </div>
+    </div>
+</div>
+
+
+<button class="btn btn-primary mb-2" @onclick="OnStartTwitterStream">Start Twitter Stream</button>
+<br />
+<div class="row row-container-elements">
+    <div class="col-4">
+        <div class="form-group">
+            <label for="dateretrieved">@LastDateRetrieved</label>
+        </div>
+    </div>
+</div>
+
+<blockquote class="w-50 m-2 p-2" style="border: 1px solid #c3c3c3;">
+    from Twitter documentation...
+
+    The streaming endpoint delivers Tweet objects through a persistent HTTP GET connection,
+    and uses OAuth 2.0 Bearer Token authentication.You can connect one client per session, and
+    can disconnect and reconnect no more than 50 times per 15 minute window.
+</blockquote>
+
+<br />
+
+<p style="color:red">@Status</p>
+
+@code {
+
+    private string LastDateRetrieved { get; set; } = string.Empty;
+    private int SampleSize = 100;
+    private string Status { get; set; } = string.Empty;
+
+
+    private async Task OnStartTwitterStream()
+    {
+        try
+        {
+            Status = string.Empty;
+
+            if (SampleSize <= 0)
+            {
+                Status = "You need to enter a valid number greater than 0";
+            }
+            else
+            {
+                await Task.Run(() => twitterStreamService.StartStreaming(SampleSize)).ConfigureAwait(false);
+                //await twitterStreamService.StartStreaming(SampleSize);
+            }
+
+
+        }
+        catch (Exception ex)
+        {
+
+            Status = ex.Message;
+        }
+    }
+}

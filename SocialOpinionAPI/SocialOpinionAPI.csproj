@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+  <TargetFramework>net5.0</TargetFramework>
+	<PackageId>SocialOpinionAPI</PackageId>
+	<Version>2.0.6</Version>
+	<Authors>Jamie Maguire</Authors>
+	<Company>Social Opinion</Company>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<PackageIcon>icon.jpg</PackageIcon>
+	<PackageIconUrl />
+	<Description>A .NET SDK written in C# that makes it easy to connect to all endpoints in the new Twitter API (v2).</Description>
+	<RepositoryUrl>https://github.com/jamiemaguiredotnet/SocialOpinion-Public</RepositoryUrl>
+	<PackageProjectUrl>https://github.com/jamiemaguiredotnet/SocialOpinion-Public</PackageProjectUrl>
+	<AssemblyVersion>2.0.6.0</AssemblyVersion>
+	<FileVersion>2.0.6.0</FileVersion>
+	<PackageTags>C#, Twitter API</PackageTags>
+	<Copyright>Social Opinion</Copyright>
+	<PackageReleaseNotes>Support for the following v2 endpoints:
+
+Tweet lookup:
+ - GET /2/tweets
+ - GET /2/tweets/:id
+
+Recent Search
+ - https://api.twitter.com/2/tweets/search/recent
+
+Timelines:
+ - GET /2/users/:id/tweets
+ - GET /2/users/:id/mentions
+
+Filtered Stream:
+ - GET /2/tweets/search/stream/rules
+ - GET /2/tweets/search/stream
+ - POST /2/tweets/search/stream/rules
+
+Sampled Stream:
+ - https://api.twitter.com/2/tweets/sample/stream
+
+Hide Replies:
+ - https://api.twitter.com/2/tweets/:id/hidden</PackageReleaseNotes>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DTO\AdsApi\**" />
+    <Compile Remove="Models\AdsApi\**" />
+    <EmbeddedResource Remove="DTO\AdsApi\**" />
+    <EmbeddedResource Remove="Models\AdsApi\**" />
+    <None Remove="DTO\AdsApi\**" />
+    <None Remove="Models\AdsApi\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="icon.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

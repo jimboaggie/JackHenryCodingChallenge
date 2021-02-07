@@ -1,0 +1,302 @@
+﻿@page "/dashboard"
+
+@using SocialOpinionAPI.Models.SampledStream
+
+@inject TwitterStats.Services.TwitterStatCache cache
+
+<h1>Twitter Analytics Dashboard</h1>
+
+<p>Last Reading: @LastDateRetrieved</p>
+
+<br />
+
+<div class="row row-container-elements mt-4">
+    <div class="col-4">
+        <div class="form-group">
+            <p style="color:red">@Status</p>
+        </div>
+    </div>
+</div>
+
+<div class="tweetlist">
+  
+        <button class="btn btn-info mr-3" @onclick="GetDomainData">Get Domain List</button>
+        <button class="btn btn-info mr-3" @onclick="GetDomainGroups">Get Domain Groups</button>
+        <button class="btn btn-info" @onclick="GetUrlData">Get Url Data</button>
+
+</div>
+
+<div class="domainList mt-4">
+    @if (domainListLoaded == true)
+    {
+
+        <div class="container">
+            <h3 class="p-3 text-center">Domain List from Sample Stream</h3>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in domainList)
+                    {
+                        <tr>
+                            <td>@item.name</td>
+                            <td>@item.description</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+<div class="urlList mt-4">
+    @if (urlListLoaded == true)
+    {
+
+        <div class="container">
+            <h3 class="p-3 text-center">Url Data from Sample Stream</h3>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Url</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in urlList)
+                    {
+                        <tr>
+                            <td>@item.expanded_url</td>
+                            <td>@item.title</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+<div class="domainList mt-4">
+    @if (domainGroupsLoaded == true)
+    {
+
+        <div class="container">
+            <h3 class="p-3 text-center">Domain Groups from Sample Stream</h3>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Domain</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in domainGroups)
+                    {
+                        <tr>
+                            <td>@item.Key</td>
+                            <td>@item.Value</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@code {
+    private string LastDateRetrieved { get; set; } = string.Empty;
+    private string Status { get; set; } = string.Empty;
+    //public ICollection<SampledStreamModel> tweetList { get; set; }
+    public List<Entity> domainList { get; set; }
+    public Dictionary<string, int> domainGroups { get; set; }
+    public List<Url> urlList { get; set; }
+
+
+    public bool tweetListLoaded = false;
+    public bool domainListLoaded = false;
+    public bool domainGroupsLoaded = false;
+
+    public bool urlListLoaded = false;
+
+    protected async override Task OnInitializedAsync()
+    {
+        try
+        {
+            await ResetUI();
+
+        }
+        catch (Exception)
+        {
+        }
+
+    }
+
+    private async Task GetData()
+    {
+
+        Status = string.Empty;
+
+        await ResetUI();
+
+
+        LastDateRetrieved = DateTime.Now.ToString();
+        int isCompleteResult = await cache.IsCollectionComplete();
+        if (isCompleteResult < 0)
+        {
+            Status = "Tweet Sample collection not initialized";
+        }
+        else if (isCompleteResult == 0)
+        {
+            tweetListLoaded = true;
+            Status = string.Format("Tweet Sample collection: {0} tweets sampled", cache.SampleSize);
+
+            //tweetList = await cache.GetCollection();
+        }
+        else
+        {
+            Status = string.Format("Tweet Sample collection in progress: {0} out of {1} collected", (cache.SampleSize - isCompleteResult), cache.SampleSize);
+        }
+
+    }
+
+    private async Task ResetUI()
+    {
+        tweetListLoaded = await Task.FromResult(false);
+        domainGroupsLoaded = await Task.FromResult(false);
+
+        domainListLoaded = await Task.FromResult(false);
+        if (domainList != null)
+        {
+            domainList.Clear();
+            domainList = null;
+        }
+
+        urlListLoaded = await Task.FromResult(false);
+        if (urlList != null)
+        {
+            urlList.Clear();
+            urlList = null;
+        }
+
+        domainGroupsLoaded = await Task.FromResult(false);
+        if (domainGroups != null)
+        {
+            domainGroups.Clear();
+            domainGroups = null;
+        }
+    }
+
+    private async Task GetDomainData()
+    {
+        try
+        {
+            await GetData();
+
+            urlListLoaded = await Task.FromResult(false);
+            if (urlList != null)
+            {
+                urlList.Clear();
+                urlList = null;
+            }
+
+            domainGroupsLoaded = await Task.FromResult(false);
+            if (domainGroups != null)
+            {
+                domainGroups.Clear();
+                domainGroups = null;
+            }
+
+            domainList = await cache.GetDomainList();
+
+            if (domainList.Count > 0)
+                domainListLoaded = await Task.FromResult(true);
+            else
+                Status = "No Domains were collected in the sample";
+
+
+        }
+        catch (Exception ex)
+        {
+
+            Status = string.Format("Exception in getting domain data: {0}", ex.Message);
+        }
+
+
+
+    }
+
+    private async Task GetUrlData()
+    {
+        try
+        {
+            await GetData();
+
+            domainListLoaded = await Task.FromResult(false);
+            if (domainList != null)
+            {
+                domainList.Clear();
+                domainList = null;
+            }
+
+            domainGroupsLoaded = await Task.FromResult(false);
+            if (domainGroups != null)
+            {
+                domainGroups.Clear();
+                domainGroups = null;
+            }
+
+            urlList = await cache.GetUrlList();
+            if (urlList.Count > 0)
+                urlListLoaded = await Task.FromResult(true);
+            else
+                Status = "No Urls were collected in the sample";
+
+        }
+        catch (Exception ex)
+        {
+
+            Status = string.Format("Exception in getting url data: {0}", ex.Message);
+        }
+
+    }
+
+    private async Task GetDomainGroups()
+    {
+        try
+        {
+            await GetData();
+
+            domainListLoaded = await Task.FromResult(false);
+            if (domainList != null)
+            {
+                domainList.Clear();
+                domainList = null;
+            }
+
+            urlListLoaded = await Task.FromResult(false);
+            if (urlList != null)
+            {
+                urlList.Clear();
+                urlList = null;
+            }
+
+            domainGroups = await cache.GetDomainCounts();
+            if (domainGroups.Count > 0)
+                domainGroupsLoaded = await Task.FromResult(true);
+            else
+                Status = "No Urls were collected in the sample";
+
+        }
+        catch (Exception ex)
+        {
+
+            Status = string.Format("Exception in getting domain groups data: {0}", ex.Message);
+        }
+
+    }
+
+}

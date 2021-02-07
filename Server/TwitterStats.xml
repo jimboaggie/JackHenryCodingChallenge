@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TwitterStats</name>
+    </assembly>
+    <members>
+        <member name="M:TwitterStats.Controllers.TwitterStatsController.StartStreaming(System.Int32)">
+            <summary>
+            Starts a Twitter Stream Sampling
+            </summary>
+            <param name="sampleSize">configures the stream to stop at the provided sample size</param>
+            <returns>Twitter Stream Started</returns>
+        </member>
+        <member name="M:TwitterStats.Controllers.TwitterStatsController.GetSampleCollectionStatus">
+            <summary>
+            Get the Status of the Twitter Stream Collection Process
+            </summary>
+            <returns>a string indicating the state of the collection process</returns>
+        </member>
+        <member name="M:TwitterStats.Controllers.TwitterStatsController.GetSampleCollection">
+            <summary>
+            Gets the sample Twitter data collected.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TwitterStats.Controllers.TwitterStatsController.GetUrlListFromCollection">
+            <summary>
+            Gets a list of url objects from the sample collection
+            </summary>
+            <returns>A list of Twitter Url Entities</returns>
+        </member>
+        <member name="M:TwitterStats.Controllers.TwitterStatsController.GetDomainListFromCollection">
+            <summary>
+            Gets a list of domain entites from the sample collection
+            </summary>
+            <returns>A list of Twitter Domain Entities</returns>
+        </member>
+        <member name="M:TwitterStats.Controllers.TwitterStatsController.GetDomainCounts">
+            <summary>
+            Gets a list of domains and the count of their occurances from a Twitter sample collection
+            </summary>
+            <returns>A list of Twitter Domain Entry Counts</returns>
+        </member>
+    </members>
+</doc>

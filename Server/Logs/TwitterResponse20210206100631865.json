@@ -1,0 +1,31 @@
+{
+  "data": {
+    "id": "1358084622546915329",
+    "created_at": "0001-01-01T00:00:00",
+    "text": "@cabinsyd @tradie4all https://t.co/qSoEWW3HtW",
+    "author_id": "1079864216377384960",
+    "in_reply_to_user_id": null,
+    "referenced_tweets": [],
+    "entities": {
+      "urls": [
+        {
+          "start": 22,
+          "end": 45,
+          "url": "https://t.co/qSoEWW3HtW",
+          "expanded_url": "https://twitter.com/BBBottomNZ/status/1358084622546915329/photo/1",
+          "display_url": "pic.twitter.com/qSoEWW3HtW",
+          "status": 0,
+          "title": null,
+          "description": null
+        }
+      ],
+      "annotations": []
+    },
+    "stats": null,
+    "possibly_sensitive": false,
+    "lang": null,
+    "source": null,
+    "context_annotations": [],
+    "format": null
+  }
+}

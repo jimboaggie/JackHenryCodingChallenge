@@ -1,0 +1,116 @@
+2021-02-06 09:51:59.023 -06:00 [INF] Start...Development
+2021-02-06 09:55:27.886 -06:00 [INF] Start...Development
+2021-02-06 09:55:55.756 -06:00 [INF] TwitterStreamService.StartStreaminge 09:55:55
+2021-02-06 10:05:31.213 -06:00 [INF] Start...Development
+2021-02-06 10:05:58.220 -06:00 [INF] TwitterStreamService.StartStreaming 10:05:58
+2021-02-06 10:27:47.721 -06:00 [INF] Start...Development
+2021-02-06 10:28:22.405 -06:00 [INF] TwitterStreamService.StartStreaming 10:28:22
+2021-02-06 10:31:31.324 -06:00 [INF] Start...Development
+2021-02-06 10:31:42.268 -06:00 [INF] TwitterStreamService.StartStreaming 10:31:42
+2021-02-06 10:32:28.221 -06:00 [INF] TwitterStreamService.StartStreaming 10:32:28
+2021-02-06 10:37:22.752 -06:00 [INF] Start...Development
+2021-02-06 10:38:26.730 -06:00 [INF] TwitterStreamService.StartStreaming 10:38:26
+2021-02-06 10:41:40.989 -06:00 [INF] Start...Development
+2021-02-06 10:42:05.277 -06:00 [INF] TwitterStreamService.StartStreaming 10:42:05
+2021-02-06 10:42:25.364 -06:00 [INF] TwitterStreamService.StartStreaming 10:42:25
+2021-02-06 10:44:34.733 -06:00 [INF] Start...Development
+2021-02-06 10:44:59.496 -06:00 [INF] TwitterStreamService.StartStreaming 10:44:59
+2021-02-06 10:50:00.374 -06:00 [INF] Start...Development
+2021-02-06 10:50:10.727 -06:00 [INF] TwitterStreamService.StartStreaming 10:50:10
+2021-02-06 10:52:19.405 -06:00 [INF] Start...Development
+2021-02-06 10:52:40.383 -06:00 [INF] TwitterStreamService.StartStreaming 10:52:40
+2021-02-06 10:53:41.606 -06:00 [INF] Start...Development
+2021-02-06 10:55:52.172 -06:00 [INF] Start...Development
+2021-02-06 10:56:05.320 -06:00 [INF] TwitterStreamService.StartStreaming 10:56:05
+2021-02-06 10:56:29.123 -06:00 [INF] TwitterStreamService.StartStreaming 10:56:29
+2021-02-06 10:58:12.843 -06:00 [INF] Start...Development
+2021-02-06 10:58:57.450 -06:00 [INF] TwitterStreamService.StartStreaming 10:58:57
+2021-02-06 10:59:34.952 -06:00 [INF] TwitterStreamService.StartStreaming 10:59:34
+2021-02-06 11:02:25.119 -06:00 [INF] Start...Development
+2021-02-06 11:02:35.637 -06:00 [INF] TwitterStreamService.StartStreaming 11:02:35
+2021-02-06 11:04:11.339 -06:00 [INF] Start...Development
+2021-02-06 12:14:22.686 -06:00 [INF] Start...Development
+2021-02-06 12:16:51.913 -06:00 [INF] Start...Development
+2021-02-06 12:17:46.875 -06:00 [INF] Start...Development
+2021-02-06 12:18:36.483 -06:00 [INF] Start...Development
+2021-02-06 12:44:43.077 -06:00 [INF] Start...Development
+2021-02-06 12:45:08.741 -06:00 [INF] TwitterStreamService.StartStreaming 12:45:08
+2021-02-06 12:49:53.124 -06:00 [INF] Start...Development
+2021-02-06 12:50:09.002 -06:00 [INF] TwitterStreamService.StartStreaming 12:50:08
+2021-02-06 12:54:12.464 -06:00 [INF] Start...Development
+2021-02-06 12:54:33.019 -06:00 [INF] TwitterStreamService.StartStreaming 12:54:33
+2021-02-06 12:54:51.286 -06:00 [INF] TwitterStreamService.StartStreaming 12:54:51
+2021-02-06 12:58:01.336 -06:00 [INF] Start...Development
+2021-02-06 12:59:22.821 -06:00 [INF] TwitterStreamService.StartStreaming 12:59:22
+2021-02-06 13:00:15.783 -06:00 [INF] TwitterStreamService.StartStreaming 01:00:15
+2021-02-06 13:01:56.123 -06:00 [INF] Start...Development
+2021-02-06 13:02:06.694 -06:00 [INF] TwitterStreamService.StartStreaming 01:02:06
+2021-02-06 13:20:28.915 -06:00 [INF] Start...Development
+2021-02-06 13:20:37.487 -06:00 [INF] TwitterStreamService.StartStreaming 01:20:37
+2021-02-06 13:41:50.236 -06:00 [INF] Start...Development
+2021-02-06 13:42:11.137 -06:00 [INF] TwitterStreamService.StartStreaming 01:42:11
+2021-02-06 13:45:03.296 -06:00 [INF] Start...Development
+2021-02-06 13:45:24.160 -06:00 [INF] TwitterStreamService.StartStreaming 01:45:24
+2021-02-06 13:49:24.854 -06:00 [INF] Start...Development
+2021-02-06 13:49:34.545 -06:00 [INF] TwitterStreamService.StartStreaming 01:49:34
+2021-02-06 13:52:48.259 -06:00 [INF] Start...Development
+2021-02-06 13:53:36.974 -06:00 [INF] TwitterStreamService.StartStreaming 01:53:36
+2021-02-06 13:54:57.979 -06:00 [INF] Start...Development
+2021-02-06 13:55:07.248 -06:00 [INF] TwitterStreamService.StartStreaming 01:55:07
+2021-02-06 14:00:30.872 -06:00 [INF] Start...Development
+2021-02-06 14:00:40.448 -06:00 [INF] TwitterStreamService.StartStreaming 02:00:40
+2021-02-06 14:01:48.221 -06:00 [INF] Start...Development
+2021-02-06 14:01:57.714 -06:00 [INF] TwitterStreamService.StartStreaming 02:01:57
+2021-02-06 14:10:28.240 -06:00 [INF] Start...Development
+2021-02-06 14:10:38.586 -06:00 [INF] TwitterStreamService.StartStreaming 02:10:38
+2021-02-06 14:15:22.897 -06:00 [INF] Start...Development
+2021-02-06 14:15:43.644 -06:00 [INF] TwitterStreamService.StartStreaming 02:15:43
+2021-02-06 14:24:59.045 -06:00 [INF] Start...Development
+2021-02-06 14:25:18.759 -06:00 [INF] TwitterStreamService.StartStreaming 02:25:18
+2021-02-06 14:27:21.543 -06:00 [INF] Start...Development
+2021-02-06 14:27:36.093 -06:00 [INF] TwitterStreamService.StartStreaming 02:27:36
+2021-02-06 14:48:45.788 -06:00 [INF] Start...Development
+2021-02-06 14:49:55.831 -06:00 [INF] Start...Development
+2021-02-06 14:58:49.226 -06:00 [INF] Start...Development
+2021-02-06 15:07:46.034 -06:00 [INF] Start...Development
+2021-02-06 15:08:18.249 -06:00 [INF] TwitterStreamService.StartStreaming 03:08:18
+2021-02-06 15:11:04.960 -06:00 [INF] Start...Development
+2021-02-06 15:11:22.600 -06:00 [INF] TwitterStreamService.StartStreaming 03:11:22
+2021-02-06 15:12:21.728 -06:00 [INF] TwitterStreamService.StartStreaming 03:12:21
+2021-02-06 15:28:07.163 -06:00 [INF] Start...Development
+2021-02-06 15:34:37.160 -06:00 [INF] Start...Development
+2021-02-06 15:34:48.577 -06:00 [INF] TwitterStreamService.StartStreaming 03:34:48
+2021-02-06 17:31:11.169 -06:00 [INF] Start...Development
+2021-02-06 17:31:16.710 -06:00 [INF] TwitterStreamService.StartStreaming 05:31:16
+2021-02-06 17:49:22.047 -06:00 [INF] Start...Development
+2021-02-06 17:50:02.575 -06:00 [INF] TwitterStreamService.StartStreaming 05:50:02
+2021-02-06 17:55:34.981 -06:00 [INF] Start...Development
+2021-02-06 17:55:57.478 -06:00 [INF] TwitterStreamService.StartStreaming 05:55:57
+2021-02-06 18:10:10.585 -06:00 [INF] Start...Development
+2021-02-06 18:10:38.049 -06:00 [INF] TwitterStreamService.StartStreaming 06:10:37
+2021-02-06 18:13:39.373 -06:00 [INF] Start...Development
+2021-02-06 18:13:58.727 -06:00 [INF] TwitterStreamService.StartStreaming 06:13:58
+2021-02-06 18:16:05.487 -06:00 [INF] Start...Development
+2021-02-06 18:16:24.597 -06:00 [INF] TwitterStreamService.StartStreaming 06:16:24
+2021-02-06 18:18:12.071 -06:00 [INF] Start...Development
+2021-02-06 18:19:03.584 -06:00 [INF] TwitterStreamService.StartStreaming 06:19:03
+2021-02-07 07:54:30.040 -06:00 [INF] Start...Development
+2021-02-07 07:54:37.378 -06:00 [INF] TwitterStreamService.StartStreaming 07:54:37
+2021-02-07 07:59:06.258 -06:00 [INF] Start...Development
+2021-02-07 07:59:15.829 -06:00 [INF] TwitterStreamService.StartStreaming 07:59:15
+2021-02-07 08:02:53.310 -06:00 [INF] Start...Development
+2021-02-07 08:03:52.198 -06:00 [INF] TwitterStreamService.StartStreaming 08:03:52
+2021-02-07 08:07:35.693 -06:00 [INF] Start...Development
+2021-02-07 08:07:48.619 -06:00 [INF] TwitterStreamService.StartStreaming 08:07:48
+2021-02-07 08:32:22.823 -06:00 [INF] Start...Development
+2021-02-07 08:33:52.792 -06:00 [INF] Start...Development
+2021-02-07 08:33:59.844 -06:00 [INF] TwitterStreamService.StartStreaming 08:33:59
+2021-02-07 08:37:05.915 -06:00 [INF] Start...Development
+2021-02-07 08:38:31.807 -06:00 [INF] Start...Development
+2021-02-07 08:38:51.284 -06:00 [INF] TwitterStreamService.StartStreaming 08:38:51
+2021-02-07 08:40:19.739 -06:00 [INF] Start...Development
+2021-02-07 08:40:26.725 -06:00 [INF] TwitterStreamService.StartStreaming 08:40:26
+2021-02-07 08:43:12.378 -06:00 [INF] Start...Development
+2021-02-07 08:43:43.262 -06:00 [INF] TwitterStreamService.StartStreaming 08:43:43
+2021-02-07 14:13:54.809 -06:00 [INF] Start...Development
+2021-02-07 14:14:01.032 -06:00 [INF] TwitterStreamService.StartStreaming 02:14:01

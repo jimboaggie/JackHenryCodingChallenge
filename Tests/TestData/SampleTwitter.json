@@ -1,0 +1,88 @@
+{
+  "data": {
+    "id": "1357670384691154944",
+    "created_at": "0001-01-01T00:00:00",
+    "text": "抗え、この不条理に――。小学館「マンガワン」で大人気連載中の出会って5秒でバトルがついにTVアニメ化！ https://t.co/ocEXqewBQ2 ちゃんとURLあったわwオススメ！まじ見てほしい！",
+    "author_id": "1214472450001399808",
+    "in_reply_to_user_id": null,
+    "referenced_tweets": [],
+    "entities": {
+      "urls": [
+        {
+          "start": 52,
+          "end": 75,
+          "url": "https://t.co/ocEXqewBQ2",
+          "expanded_url": "https://dea5-anime.com",
+          "display_url": "dea5-anime.com",
+          "status": 200,
+          "title": "TVアニメ「出会って5秒でバトル」公式サイト",
+          "description": "\"抗え、この不条理に――。小学館「マンガワン」で大人気連載中の出会って5秒でバトルがついにTVアニメ化！\""
+        }
+      ],
+      "annotations": [
+        {
+          "start": 16,
+          "end": 20,
+          "probability": 0.5579,
+          "type": "Other",
+          "normalized_text": "マンガワン"
+        }
+      ]
+    },
+    "stats": null,
+    "possibly_sensitive": false,
+    "lang": null,
+    "source": null,
+    "context_annotations": [
+      {
+        "domain": {
+          "id": "46",
+          "name": "Brand Category",
+          "description": "Categories within Brand Verticals that narrow down the scope of Brands"
+        },
+        "entity": {
+          "id": "781974596752842752",
+          "name": "Services",
+          "description": null
+        }
+      },
+      {
+        "domain": {
+          "id": "47",
+          "name": "Brand",
+          "description": "Brands and Companies"
+        },
+        "entity": {
+          "id": "1160980436459220997",
+          "name": "マンガワン",
+          "description": "マンガワン"
+        }
+      },
+      {
+        "domain": {
+          "id": "65",
+          "name": "Interests and Hobbies Vertical",
+          "description": "Top level interests and hobbies groupings, like Food or Travel"
+        },
+        "entity": {
+          "id": "839543165002506240",
+          "name": "Anime",
+          "description": null
+        }
+      },
+      {
+        "domain": {
+          "id": "85",
+          "name": "Book Genre",
+          "description": "A genre for books, like Fiction"
+        },
+        "entity": {
+          "id": "847521144173350912",
+          "name": "Comics",
+          "description": "Comics"
+        }
+      }
+    ],
+    "format": null
+  }
+}
